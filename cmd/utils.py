@@ -129,7 +129,7 @@ def insta_bruteforce(username, wordlist, vpn):
   c_spam = 0
 
   try:
-      wl_file = open("wordlist/"+wordlist, 'r')
+      wl_file = open("wordlist"+wordlist, 'r')
       wl_lines = [line.strip() for line in wl_file.readlines()]  # Rimuovi i caratteri di nuova riga
       count = 0
   except FileNotFoundError:
